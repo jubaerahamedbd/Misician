@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    background-color: #ffffff;
+
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container {
+    flex-basis: 1250px;
+    margin: 0px 30px;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header>img {
+    width: 100%;
+}
+
+.nav-link {
+    position: absolute;
+    top: 0;
+    background-color: #bbbbbb63;
+    width: 100%;
+}
+
+.header-order {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0px;
+    list-style: none;
+}
+
+.header-order>li>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.nav-active {
+    font-weight: 300 !important;
+    border-bottom: 1px solid #000000;
+}
+
+.discography {
+    margin: 40px 0px;
+}
+
+.discography-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.discography-title {
+    margin-bottom: 30px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.discography-title>h1 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    font-size: 50px;
+    position: relative;
+    color: #996A4F;  
+    margin-bottom: 15px;
+}
+.title-line{
+    border-top: 1px solid black;
+    position: absolute;
+    width: 110%;
+    left: -5%;
+    top: 61%;
+}
+.discography-title>span {
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #798285;
+}
+@media (min-width: 1440px) {}
+
+/*large Device*/
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/*Medium Device*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-order>li>a {
+        font-size: 14px;
+    }
+}
+
+/* Small Device*/
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .header-order>li>a {
+        font-size: 10px;
+    }
+}
+
+/*Mobile Device*/
+
+@media (min-width: 420px) and (max-width: 575px) {}
+
+/* Small Mobile Device */
+@media (min-width: 320px) and (max-width: 419px) {}
